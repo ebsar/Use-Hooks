@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <div className="container"onClick={onClicke}>
         <div className="test"><small className="text" >Why park a domain name in Parkname ?</small>
-        <button className={showText ? 'rotated':'rotate'} onClick={onClicke}>
+        <small className={showText ? 'rotated':'rotate'} >
         <FiChevronDown/>
-        </button></div>
+        </small></div>
         {showText ? <div className="demo"> <Text/> </div>: null}
        </div  > </div>
   );
