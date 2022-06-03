@@ -9,8 +9,8 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="container">
-        <div className="test"onClick={onClicke}><small className="text" >Why park a domain name in Parkname ?</small>
+      <div className="container"onClick={onClicke}>
+        <div className="test"><small className="text" >Why park a domain name in Parkname ?</small>
         <button className={showText ? 'rotated':'rotate'} onClick={onClicke}>
         <FiChevronDown/>
         </button></div>
