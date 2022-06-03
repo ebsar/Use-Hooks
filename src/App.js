@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
+/* import {AiOutlineUser} from 'react-icons/ai' */
 function App() {
+  const [showText, setShowText] = useState(false);
+  const onClicke = () => {
+    setShowText((prev) => !prev);
+    
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container">
+        <div className="test"><small className="text">Why park a domain name in Parkname ?</small>
+        <button className={showText ? 'rotated':'rotate'} onClick={onClicke}>
+        <FiChevronDown/>
+        </button></div>
+        {showText ? <div className="demo"> <Text/> </div>: null}
+       </div  > </div>
   );
 }
+const Text = () => <div className="text1">Parkname is the leading industry standard for for domain name
+parking and monetization services. We offer a wide variety of
+services to helpyou achive success.</div>;
+
 
 export default App;
