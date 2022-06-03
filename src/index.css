@@ -10,9 +10,11 @@
 }.rotated{
   transform: rotate(180deg);
   border: none;
+  transition: 0.3s ease-in-out;
   background-color: transparent;
 }.rotate{
   border: none;
+  transition: 0.3s ease-in-out;
   background-color: transparent;
 }.text1{
   padding: 20px;
